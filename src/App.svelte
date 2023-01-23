@@ -23,9 +23,10 @@
 </script>
 
 <a-scene embedded arjs stats vr-mode-ui="enabled: false;">
-  <a-marker preset="hiro">
-    <a-cone position='0 0.5 0' rotation="0 0 0" radius-bottom="0.5" material='opacity: 0.75; color: red;'></a-cone>
-  </a-marker>
+  <a-marker type="pattern" url="pattern-fz-marker.patt" size="0.05">
+    <a-gltf-model position="0 0.1 0" rotation="-90 0 0" scale="0.5 0.5 0.5" src="metallschild5.glb"></a-gltf-model>
+    <a-gltf-model position="0 0.1 0" rotation="0 0 0" scale="0.5 0.5 0.5" src="duck.glb"></a-gltf-model>
+</a-marker>
   <a-camera look-controls="enabled: false; active: true;" position="0 0 0"></a-camera>
 </a-scene>
 
